@@ -59,7 +59,7 @@ class _MainActivityState extends State<MainActivity> {
           'Contacts',
           style: TextStyle(
             fontWeight: FontWeight.w900,
-            fontSize: 30,
+            fontSize: 25,
             color: Colors.white,
             fontFamily: 'Montserrat',
           ),

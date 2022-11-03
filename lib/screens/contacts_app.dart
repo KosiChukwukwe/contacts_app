@@ -64,11 +64,13 @@ class _MainActivityState extends State<MainActivity> {
             fontFamily: 'Montserrat',
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add),
-            color: Colors.white,
-            onPressed: () {},
+        actions: const [
+          Padding(
+            padding: EdgeInsets.fromLTRB(0,0,24, 0),
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
@@ -147,10 +149,9 @@ class _MainActivityState extends State<MainActivity> {
                           fontFamily: 'Montserrat',
                         ),
                       ),
-                      trailing: IconButton(
-                        icon: const Icon(Icons.phone),
+                      trailing: const Icon(
+                        Icons.phone,
                         color: Colors.green,
-                        onPressed: () {},
                       ),
                     );
                   },

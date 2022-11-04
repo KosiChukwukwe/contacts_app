@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:week6_task_one/models/contact_detail.dart';
 
-class MainActivity extends StatefulWidget {
-  const MainActivity({Key? key}) : super(key: key);
+class ContatsApp extends StatefulWidget {
+  const ContatsApp({Key? key}) : super(key: key);
 
   @override
-  State<MainActivity> createState() => _MainActivityState();
+  State<ContatsApp> createState() => _ContatsAppState();
 }
 
-class _MainActivityState extends State<MainActivity> {
+class _ContatsAppState extends State<ContatsApp> {
   final List<ContactDetails> contacts = [
     ContactDetails(
         contactName: "Audrey",
@@ -66,7 +66,7 @@ class _MainActivityState extends State<MainActivity> {
         ),
         actions: const [
           Padding(
-            padding: EdgeInsets.fromLTRB(0,0,24, 0),
+            padding: EdgeInsets.fromLTRB(0, 0, 24, 0),
             child: Icon(
               Icons.add,
               color: Colors.white,
@@ -99,7 +99,6 @@ class _MainActivityState extends State<MainActivity> {
                             fontSize: 20,
                             color: Colors.white,
                             fontFamily: 'Montserrat',
-
                           ),
                         ),
                         const Gap(4),

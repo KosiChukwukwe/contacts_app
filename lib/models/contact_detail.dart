@@ -1,7 +1,7 @@
 class ContactDetails {
-  String contactName;
-  String phoneNumber;
-  String imagePath;
+  final String contactName;
+  final String phoneNumber;
+  final String imagePath;
 
   ContactDetails({
     required this.contactName,
